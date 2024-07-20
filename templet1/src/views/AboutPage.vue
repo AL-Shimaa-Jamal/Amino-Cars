@@ -15,7 +15,7 @@
       </div>
     </section>
     <div class="span">
-      <img src="../assets/AnimosCar/download.jfif" alt="" />
+      <img src="../assets/AnimosCar/download-removebg-preview.png" alt="" style="background: transparent;" />
     </div>
     <section class="featurs">
       <div class="card" v-for="(fet, i) in featurs" :key="i">
