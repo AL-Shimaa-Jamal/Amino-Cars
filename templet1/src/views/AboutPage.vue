@@ -15,7 +15,7 @@
       </div>
     </section>
     <div class="span">
-      <img src="../assets/AnimosCar/download-removebg-preview.png" alt="" style="background: transparent;" />
+      <img src="../assets/AnimosCar/download-removebg-preview.png" alt=""  />
     </div>
     <section class="featurs">
       <div class="card" v-for="(fet, i) in featurs" :key="i">
@@ -72,11 +72,11 @@ export default {
   text-align: center;
   width: 100%;
   height: 10px;
-  margin: 0 0 2% 0;
+  margin: 0 0 6% 0;
   animation: arrow 2s linear 0.5s alternate infinite;
 }
 .span img {
-  width: 20px;
+  width: 50px;
 }
 @keyframes arrow {
   0% {

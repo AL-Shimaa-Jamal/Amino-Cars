@@ -1,5 +1,5 @@
-<template>
-    <div>
-        contact
-    </div>
-</template>
+
+      <template>
+        hi
+      </template>
+
