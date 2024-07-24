@@ -2,14 +2,14 @@
   <div class="main">
     <div class="content">
       <div class="anim">
-        <span>animos cars</span>
+        <span >animos cars</span>
       </div>
       <div>
-        <p>
+        <p class="d-none d-lg-block d-md-block">
           find your expectation , or explore latest news in car world , accessories and all about
           cars
         </p>
-         <btn :title="title"/>
+        <btn class="d-none d-lg-block" :title="title" />
       </div>
     </div>
   </div>
@@ -17,13 +17,13 @@
 <script>
 import btn from '../components/ButtunClick.vue'
 export default {
-  name:'main',
-  components:{
+  name: 'main',
+  components: {
     btn
   },
-  data(){
-    return{
-      title:'Know more'
+  data() {
+    return {
+      title: 'Know more'
     }
   }
 }
@@ -31,6 +31,8 @@ export default {
 
 <style scoped>
 .main {
+  position: relative;
+  overflow: hidden;
   background-image: url('../assets/AnimosCar/landing.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -49,22 +51,22 @@ span {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
 }
-.anim{
-    animation: top 3s linear 2s infinite alternate;
+.anim {
+  animation: top 3s linear 2s infinite alternate;
 }
 @keyframes top {
-    0%{
-        transform: translatey(-10px);
-    }
-    50%{
-        transform: translatey(0px);
-    }
-    100%{
-        transform: translatey(10px);
-    }
+  0% {
+    transform: translatey(-10px);
+  }
+  50% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(10px);
+  }
 }
 p {
   color: white;
@@ -73,5 +75,4 @@ p {
   letter-spacing: 1.3px;
   line-height: 1.5;
 }
-
 </style>

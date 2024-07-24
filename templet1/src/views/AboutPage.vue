@@ -1,22 +1,27 @@
 <template>
   <div class="about">
     <section class="main">
-      <div class="content">
-        <h3>About US</h3>
-        <p>
+      <!-- right side -->
+      <div class="content ">
+        <h3 class="">About US</h3>
+        <p class="d-none d-md-block d-lg-block">
           lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
           graphic or web designs. The passage is attributed to an unknown typesetter in the 15th
           century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum
           for use in a type specimen book
         </p>
       </div>
-      <div class="immg">
+      <!-- left side -->
+      <div class="immg d-none d-lg-block d-md-block">
         <img src="../assets/AnimosCar/about.svg" alt="about us" width="100" srcset="" />
       </div>
     </section>
-    <div class="span">
-      <img src="../assets/AnimosCar/download-removebg-preview.png" alt=""  />
+    <!-- second part services -->
+    <!-- arrow down -->
+    <div class="span d-none d-md-block d-lg-block">
+      <img src="../assets/AnimosCar/download-removebg-preview.png" alt="more services" title="service"  />
     </div>
+    <!--  start features  -->
     <section class="featurs">
       <div class="card" v-for="(fet, i) in featurs" :key="i">
         <div>
@@ -67,6 +72,7 @@ export default {
   background: #212121;
   text-transform: capitalize;
   height: 200vh;
+  padding: 3%;
 }
 .span {
   text-align: center;
@@ -142,9 +148,14 @@ img {
   background: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(255, 255, 255, 0.3));
   text-align: center;
   border-radius: 5%;
-  width: 20%;
+  color: white;
 }
 .card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap ;
+  flex-direction: column;
   transition: all ease-in-out 0.9s;
 }
 .card div h4 {
