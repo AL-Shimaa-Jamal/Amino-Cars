@@ -6,32 +6,31 @@
         <img src="../assets/AnimosCar/Star 3.svg" alt="star" />
       </span>
     </div>
-
     <!-- sports cars images  -->
-    <section class="d-flex justify-content-center align-items-center   mt-5 p-2">
+    <section class="d-flex justify-content-center align-items-center mt-5 p-2">
       <!-- left img -->
-      <div class=" col-6 d-none d-lg-block m-md-2">
+      <div class="col-6 d-none d-lg-block m-md-2">
         <img src="../assets/AnimosCar/Rectangle 4.svg" alt="" />
       </div>
       <!--  right images -->
-      <div class="someimages d-flex flex-wrap ">
+      <div class="someimages d-flex flex-wrap">
         <!-- images cards -->
-        <div class="card shadow bg-dark text-light">
+        <div v-for="(card, i) in cars" :key="i" class="card shadow bg-dark text-light">
           <div class="card-image">
-            <img src="../assets/AnimosCar/Rectangle 4-1.svg" alt="" width="100%" />
+            <img :src="card.image" alt="cars" width="100%"/>
           </div>
           <div class="card-body">
-            <h4>Audi</h4>
-            <p>now you can do upgrade to you engine</p>
-            <div class="text-end">2.400.00 EG</div>
+            <h4>{{ card.title }}</h4>
+            <p>{{ card.description }}</p>
+            <div class="text-end">{{ card.price }}</div>
           </div>
         </div>
-        <div class="card shadow bg-dark text-light">
+        <!-- <div class="card shadow bg-dark text-light">
           <div class="card-image">
             <img src="../assets/AnimosCar/Rectangle 4-2.svg" alt="" width="100%" />
           </div>
           <div class="card-body">
-            <h4>Ferrari</h4>
+            <h4></h4>
             <p>now you can do upgrade to you engine</p>
             <div class="text-end">2.400.00 EG</div>
           </div>
@@ -41,7 +40,7 @@
             <img src="../assets/AnimosCar/Rectangle 4-3.svg" alt="" width="100%" />
           </div>
           <div class="card-body">
-            <h4>Corvete</h4>
+            <h4></h4>
             <p>now you can do upgrade to you engine</p>
             <div class="text-end">2.400.00 EG</div>
           </div>
@@ -55,30 +54,59 @@
             <p>now you can do upgrade to you engine</p>
             <div class="text-end">2.400.00 EG</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </div>
 </template>
+
   
-  <script>
+<script>
 export default {
   data() {
     return {
-      cars: []
+      cars: [
+        {
+          'image': 'src/assets/AnimosCar/car1.svg',
+          title: 'audi',
+          description: 'now you can do upgrade to you engine',
+          price: '4.500.00 EG'
+        },
+        {
+          'image': 'src/assets/AnimosCar/car2.svg',
+          title: 'Ferrari',
+          description: 'now you can do upgrade to you engine',
+          price: '2.700.00 EG'
+        },
+        {
+          'image': 'src/assets/AnimosCar/car3.svg',
+          title: 'Corvete',
+          description: 'now you can do upgrade to you engine',
+          price: '3.650.00 EG'
+        },
+        {
+          'image': 'src/assets/AnimosCar/car4.svg',
+          title: 'camaro',
+          description: 'now you can do upgrade to you engine',
+          price: '2.400.00 EG'
+        },
+      ]
     }
   },
   methods: {}
 }
 </script>
-  <style  scoped>
+
+<style scoped>
 .main {
   height: 200vh;
 }
+
 .title img {
   width: 20px;
   transform: translate(-30%, 80%);
 }
+
 h1::after {
   content: '';
   width: 11%;
@@ -88,6 +116,7 @@ h1::after {
   top: 8%;
   right: 52%;
 }
+
 h1::before {
   content: '';
   width: 11%;
@@ -97,42 +126,50 @@ h1::before {
   top: 8%;
   right: 37.9%;
 }
+
 .someimages {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.card{
-  /* width: 40%; */
-  margin:0 0  20px 10px;
-  transition: all .6s linear;
+
+.card {
+  margin: 0 0 20px 10px;
+  transition: all 0.6s linear;
 }
-.card:hover{
+
+.card:hover {
   cursor: pointer;
-box-shadow: 5px 5px 10px rgb(170, 170, 170) !important;
-margin: 2%;
-border: 1px solid gray;
+  box-shadow: 5px 5px 10px rgb(170, 170, 170) !important;
+  margin: 2%;
+  border: 1px solid gray;
 }
+
 @media screen and (max-width: 1000px) {
   h1::after {
     top: 7.4%;
     right: 53%;
   }
+
   h1::before {
     top: 7.4%;
     right: 37.5%;
   }
 }
+
 @media screen and (max-width: 800px) {
-  
   h1::after {
     top: 7.5%;
     right: 54%;
   }
+
   h1::before {
     top: 7.5%;
     right: 37.5%;
   }
+  .card:hover {
+  margin: 0;
+}
 }
 </style>

@@ -33,10 +33,10 @@ export default {
 .main {
   position: relative;
   overflow: hidden;
-  background-image: url('../assets/AnimosCar/landing.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('../assets/AnimosCar/landing.svg') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   width: 100%;
   height: 100vh;
   text-transform: capitalize;

@@ -25,7 +25,7 @@
     <section class="featurs">
       <div class="card" v-for="(fet, i) in featurs" :key="i">
         <div>
-          <img :src="fet.icon" alt="" />
+          <img :src="fet.icon" alt="icons" />
           <h4>{{ fet.title }}</h4>
           <p>{{ fet.description }}</p>
         </div>
@@ -68,9 +68,7 @@ export default {
 <!-- stylying  -->
 <style scoped>
 .about {
-  color: white;
   background: #212121;
-  text-transform: capitalize;
   height: 200vh;
   padding: 3%;
 }

@@ -3,10 +3,12 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template >
-  <header> 
-    <NavBar />
-  </header>
-  <RouterView />
+  <div class="main">
+    <header> 
+      <NavBar />
+    </header>
+    <RouterView />
+  </div>
 </template>
 <script>
 import NavBar from './components/NavBar.vue'
@@ -19,7 +21,11 @@ export default {
 </script>
 
 <style  scoped>
-
+.main{
+  color: white;
+  background: #212121;
+  text-transform: capitalize;
+}
 </style>
 
 
