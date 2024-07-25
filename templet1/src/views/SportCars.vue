@@ -37,7 +37,7 @@ export default {
     return {
       cars: [
         {
-          image: 'src/assets/AnimosCar/car1.svg',
+          image: '../../src/assets/AnimosCar/car1.svg',
           title: 'audi',
           description: 'now you can do upgrade to you engine',
           price: '4.500.00 EG'
