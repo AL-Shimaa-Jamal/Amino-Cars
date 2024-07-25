@@ -33,7 +33,7 @@ export default {
 .main {
   position: relative;
   overflow: hidden;
-  background-image: url('../../public/landing.svg') !important;
+  background-image: url('/landing.svg') !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;

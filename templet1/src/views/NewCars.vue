@@ -3,7 +3,7 @@
       <div class="title text-center pt-4">
         <h1>our new collection</h1>
         <span>
-          <img src="../../public/Star 3.svg" alt="star" />
+          <img src="/Star 3.svg" alt="star" />
         </span>
       </div>
       <!-- new cars images  -->
@@ -35,42 +35,42 @@
         cars: [
           {
             id:1,
-            image: '../../public/new (1).svg',
+            image: '/new (1).svg',
             title: 'audi',
             description: 'now you can do upgrade to you engine',
             price: '4.500.00 EG'
           },
           {
             id:2,
-            image: '../../public/new (2).svg',
+            image: '/new (2).svg',
             title: 'Ferrari',
             description: 'now you can do upgrade to you engine',
             price: '2.700.00 eg'
           },
           {
             id:3,
-            image: '../../public/new (3).svg',
+            image: '/new (3).svg',
             title: 'Corvete',
             description: 'now you can do upgrade to you engine',
             price: '3.650.00 EG'
           },
           {
             id:4,
-            image: "../../public/new (4).svg",
+            image: "/new (4).svg",
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
           },
           {
             id:5,
-            image: "../../public/car1.svg",
+            image: "/car1.svg",
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
           },
           {
             id:6,
-            image: '../../public/car2.svg',
+            image: '/car2.svg',
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
