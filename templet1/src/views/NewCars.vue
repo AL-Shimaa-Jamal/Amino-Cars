@@ -43,7 +43,7 @@
             image: 'src/assets/AnimosCar/new (2).svg',
             title: 'Ferrari',
             description: 'now you can do upgrade to you engine',
-            price: '2.700.00 EG'
+            price: '2.700.00 eg'
           },
           {
             image: 'src/assets/AnimosCar/new (3).svg',
