@@ -25,36 +25,6 @@
             <div class="text-end">{{ card.price }}</div>
           </div>
         </div>
-        <!-- <div class="card shadow bg-dark text-light">
-          <div class="card-image">
-            <img src="../assets/AnimosCar/Rectangle 4-2.svg" alt="" width="100%" />
-          </div>
-          <div class="card-body">
-            <h4></h4>
-            <p>now you can do upgrade to you engine</p>
-            <div class="text-end">2.400.00 EG</div>
-          </div>
-        </div>
-        <div class="card shadow bg-dark text-light">
-          <div class="card-image">
-            <img src="../assets/AnimosCar/Rectangle 4-3.svg" alt="" width="100%" />
-          </div>
-          <div class="card-body">
-            <h4></h4>
-            <p>now you can do upgrade to you engine</p>
-            <div class="text-end">2.400.00 EG</div>
-          </div>
-        </div>
-        <div class="card shadow bg-dark text-light">
-          <div class="card-image">
-            <img src="../assets/AnimosCar/Rectangle 4-4.svg" alt="" width="100%" />
-          </div>
-          <div class="card-body">
-            <h4>camaro</h4>
-            <p>now you can do upgrade to you engine</p>
-            <div class="text-end">2.400.00 EG</div>
-          </div>
-        </div> -->
       </div>
     </section>
   </div>
