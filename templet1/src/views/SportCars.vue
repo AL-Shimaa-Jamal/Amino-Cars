@@ -10,7 +10,7 @@
     <section class="d-flex justify-content-center align-items-center mt-5 p-2">
       <!-- left img -->
       <div class="col-6 d-none d-lg-block m-md-2">
-        <img src="../assets/AnimosCar/car1.svg" alt="" />
+        <img src="../assets/AnimosCar/new (2).svg" alt="" />
       </div>
       <!--  right images -->
       <div class="someimages d-flex flex-wrap">
