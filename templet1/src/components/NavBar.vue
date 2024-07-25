@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container w-100">
     <div class="logo ">
-      <img src="../assets/AnimosCar/logo.svg" alt="logo"  width="50%"/>
+      <img src="../../public/logo.svg" alt="logo"  width="50%"/>
     </div>
     <div class=" d-flex justify-content-end">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@ export default {
 </script>
 <style >
 nav{
-  background-image: url('../assets/AnimosCar/landing.svg');
+  background-image: url('../../public/landing.svg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;

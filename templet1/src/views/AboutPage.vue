@@ -13,13 +13,13 @@
       </div>
       <!-- left side -->
       <div class="immg d-none d-lg-block d-md-block">
-        <img src="../assets/AnimosCar/about.svg" alt="about us" width="100" srcset="" />
+        <img src="../../public/about.svg" alt="about us" width="100" srcset="" />
       </div>
     </section>
     <!-- second part services -->
     <!-- arrow down -->
     <div class="span d-none d-md-block d-lg-block">
-      <img src="../assets/AnimosCar/download-removebg-preview.png" alt="more services" title="service"  />
+      <img src="../../public/download-removebg-preview.png" alt="more services" title="service"  />
     </div>
     <!--  start features  -->
     <section class="featurs">
@@ -41,22 +41,22 @@ export default {
     return {
       featurs: [
         {
-          icon: '../assets/AnimosCar/abouticon/gis_car.svg',
+          icon: '../../public/abouticon/gis_car.svg',
           title: 'warranty',
           description: 'now you can Benefit from the warranty period .'
         },
         {
-          icon: '../assets/AnimosCar/abouticon/mdi_security-lock-outline.svg',
+          icon: '../../public/abouticon/mdi_security-lock-outline.svg',
           title: 'security inspection',
           description: 'now your services and data is secured .'
         },
         {
-          icon: '../assets/AnimosCar/abouticon/mingcute_engine-fill.svg',
+          icon: '../../public/abouticon/mingcute_engine-fill.svg',
           title: 'engine upgrade',
           description: 'now you can do upgrade to you engine .'
         },
         {
-          icon: '../assets/AnimosCar/abouticon.svg',
+          icon: '../../public/abouticon.svg',
           title: 'check breakup',
           description: 'now you can have full up chek about your car . '
         }

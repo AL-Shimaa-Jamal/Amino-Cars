@@ -3,14 +3,14 @@
     <div class="title text-center pt-4">
       <h1>Sports Cars</h1>
       <span>
-        <img src="../assets/AnimosCar/Star 3.svg" alt="star" />
+        <img src="../../public/Star 3.svg" alt="star" />
       </span>
     </div>
     <!-- sports cars images  -->
     <section class="d-flex justify-content-center align-items-center mt-5 p-2">
       <!-- left img -->
       <div class="col-6 d-none d-lg-block m-md-2">
-        <img src="../assets/AnimosCar/new (2).svg" alt="" />
+        <img src="../../public/new (2).svg" alt="" />
       </div>
       <!--  right images -->
       <div class="someimages d-flex flex-wrap">
@@ -37,25 +37,25 @@ export default {
     return {
       cars: [
         {
-          image: '../assets/AnimosCar/car1.svg',
+          image: '../../public/car1.svg',
           title: 'audi',
           description: 'now you can do upgrade to you engine',
           price: '4.500.00 EG'
         },
         {
-          image: '../assets/AnimosCar/car2.svg',
+          image: '../../public/car2.svg',
           title: 'Ferrari',
           description: 'now you can do upgrade to you engine',
           price: '2.700.00 EG'
         },
         {
-          image: '../assets/AnimosCar/car3.svg',
+          image: '../../public/car3.svg',
           title: 'Corvete',
           description: 'now you can do upgrade to you engine',
           price: '3.650.00 EG'
         },
         {
-          image: '../assets/AnimosCar/car4.svg',
+          image: '../../public/car4.svg',
           title: 'camaro',
           description: 'now you can do upgrade to you engine',
           price: '2.400.00 EG'
