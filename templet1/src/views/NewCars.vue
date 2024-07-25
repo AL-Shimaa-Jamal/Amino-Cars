@@ -115,7 +115,7 @@
   .card {
 
     margin: 0 0 20px 20px;
-    transition: all 0.6s linear;
+    transition: all 0.4s linear;
   }
   .card-image{
     width:100%;

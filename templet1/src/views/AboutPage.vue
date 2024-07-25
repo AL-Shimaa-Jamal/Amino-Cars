@@ -22,12 +22,14 @@
       <img src="../../public/download-removebg-preview.png" alt="more services" title="service"  />
     </div>
     <!--  start features  -->
-    <section class="featurs">
-      <div class="card" v-for="(fet, i) in featurs" :key="i">
-        <div>
-          <img :src="fet.icon" alt="" />
-          <h4>{{ fet.title }}</h4>
-          <p>{{ fet.description }}</p>
+    <section class="featurs  ">
+      <div class="container d-flex flex-wrap justify-content-center align-items-center ">
+        <div class="card m-2 " v-for="(fet, i) in featurs" :key="i">
+          <div>
+            <img :src=fet.icon alt="featur icons" />
+            <h4>{{ fet.title }}</h4>
+            <p>{{ fet.description }}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -134,7 +136,6 @@ img {
 }
 .featurs {
   width: 100%;
-  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,7 +155,7 @@ img {
   align-items: center;
   flex-wrap:wrap ;
   flex-direction: column;
-  transition: all ease-in-out 0.9s;
+  transition: all ease-in-out 0.5s;
 }
 .card div h4 {
   font-size: 23px;
