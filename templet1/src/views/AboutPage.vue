@@ -123,7 +123,7 @@ h3 {
   align-items: center;
   width: 75%;
   height: 45%;
-  background-image: url('../assets/AnimosCar/bgAbout.svg');
+  background-image: url('../../public/bgAbout.svg');
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: 100%;
