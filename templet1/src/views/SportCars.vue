@@ -37,25 +37,25 @@ export default {
     return {
       cars: [
         {
-          image: '../assets/AnimosCar/car1.svg',
+          image: 'src/assets/AnimosCar/car1.svg',
           title: 'audi',
           description: 'now you can do upgrade to you engine',
           price: '4.500.00 EG'
         },
         {
-          image: '../assets/AnimosCar/car2.svg',
+          image: 'src/assets/AnimosCar/car2.svg',
           title: 'Ferrari',
           description: 'now you can do upgrade to you engine',
           price: '2.700.00 EG'
         },
         {
-          image: '../assets/AnimosCar/car3.svg',
+          image: 'src/assets/AnimosCar/car3.svg',
           title: 'Corvete',
           description: 'now you can do upgrade to you engine',
           price: '3.650.00 EG'
         },
         {
-          image: '../assets/AnimosCar/car4.svg',
+          image: 'src/assets/AnimosCar/car4.svg',
           title: 'camaro',
           description: 'now you can do upgrade to you engine',
           price: '2.400.00 EG'
