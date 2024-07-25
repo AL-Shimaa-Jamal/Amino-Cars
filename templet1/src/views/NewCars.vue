@@ -35,14 +35,14 @@
         cars: [
           {
             id:1,
-            image: 'src/assets/AnimosCar/new (1).svg',
+            image: '../assets/AnimosCar/new (1).svg',
             title: 'audi',
             description: 'now you can do upgrade to you engine',
             price: '4.500.00 EG'
           },
           {
             id:2,
-            image: 'src/assets/AnimosCar/new (2).svg',
+            image: '../assets/AnimosCar/new (2).svg',
             title: 'Ferrari',
             description: 'now you can do upgrade to you engine',
             price: '2.700.00 eg'
@@ -56,21 +56,21 @@
           },
           {
             id:4,
-            image: 'src/assets/AnimosCar/new (4).svg',
+            image: '../assets/AnimosCar/new (4).svg',
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
           },
           {
             id:5,
-            image: "./src/assets/AnimosCar/car2.svg",
+            image: "../assets/AnimosCar/car2.svg",
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
           },
           {
             id:6,
-            image: 'src/assets/AnimosCar/car1.svg',
+            image: '../assets/AnimosCar/car1.svg',
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
