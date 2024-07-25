@@ -11,11 +11,11 @@
         <!--  cars images -->
         <div class=" d-flex flex-wrap container justify-content-center ">
           <!-- images cards -->
-          <div v-for="(card, i) in cars" :key="i" class="card shadow bg-dark text-light  ">
+          <div v-for="(card, i) in cars" :key="i" class="card shadow  w-25 bg-dark text-light  ">
             <div class="card-image  ">
-              <img :src="card.image" alt="cars" width="400px" height="400px"/>
+              <img :src="card.image" alt="cars" />
             </div>
-            <div class="card-body">
+            <div class="card-body ">
               <h4>{{ card.title }}</h4>
               <p>{{ card.description }}</p>
               <div class="text-end">{{ card.price }}</div>
@@ -34,25 +34,43 @@
       return {
         cars: [
           {
+            id:1,
             image: 'src/assets/AnimosCar/new (1).svg',
             title: 'audi',
             description: 'now you can do upgrade to you engine',
             price: '4.500.00 EG'
           },
           {
+            id:2,
             image: 'src/assets/AnimosCar/new (2).svg',
             title: 'Ferrari',
             description: 'now you can do upgrade to you engine',
             price: '2.700.00 eg'
           },
           {
+            id:3,
             image: 'src/assets/AnimosCar/new (3).svg',
             title: 'Corvete',
             description: 'now you can do upgrade to you engine',
             price: '3.650.00 EG'
           },
           {
+            id:4,
             image: 'src/assets/AnimosCar/new (4).svg',
+            title: 'camaro',
+            description: 'now you can do upgrade to you engine',
+            price: '2.400.00 EG'
+          },
+          {
+            id:5,
+            image: 'src/assets/AnimosCar/car2.svg',
+            title: 'camaro',
+            description: 'now you can do upgrade to you engine',
+            price: '2.400.00 EG'
+          },
+          {
+            id:6,
+            image: 'src/assets/AnimosCar/car1.svg',
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
@@ -95,10 +113,17 @@
     right: 37.9%;
   }  
   .card {
-    margin: 0 0 20px 10px;
+
+    margin: 0 0 20px 20px;
     transition: all 0.6s linear;
   }
-  
+  .card-image{
+    width:100%;
+
+  }
+  .card-image img{
+width: 100%;
+  }
   .card:hover {
     cursor: pointer;
     box-shadow: 2px 2px 10px rgb(170, 170, 170) !important;
