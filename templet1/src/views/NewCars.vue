@@ -63,7 +63,7 @@
           },
           {
             id:5,
-            image: './src/assets/AnimosCar/car2.svg',
+            image: "./src/assets/AnimosCar/car2.svg",
             title: 'camaro',
             description: 'now you can do upgrade to you engine',
             price: '2.400.00 EG'
