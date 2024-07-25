@@ -25,7 +25,7 @@
     <section class="featurs">
       <div class="card" v-for="(fet, i) in featurs" :key="i">
         <div>
-          <img :src="fet.icon" alt="icons" />
+          <img :src="fet.icon" alt="" />
           <h4>{{ fet.title }}</h4>
           <p>{{ fet.description }}</p>
         </div>
