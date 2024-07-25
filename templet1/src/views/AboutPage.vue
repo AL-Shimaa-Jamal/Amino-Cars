@@ -41,22 +41,22 @@ export default {
     return {
       featurs: [
         {
-          icon: 'src/assets/AnimosCar/abouticon/gis_car.svg',
+          icon: '../assets/AnimosCar/abouticon/gis_car.svg',
           title: 'warranty',
           description: 'now you can Benefit from the warranty period .'
         },
         {
-          icon: 'src/assets/AnimosCar/abouticon/mdi_security-lock-outline.svg',
+          icon: '../assets/AnimosCar/abouticon/mdi_security-lock-outline.svg',
           title: 'security inspection',
           description: 'now your services and data is secured .'
         },
         {
-          icon: 'src/assets/AnimosCar/abouticon/mingcute_engine-fill.svg',
+          icon: '../assets/AnimosCar/abouticon/mingcute_engine-fill.svg',
           title: 'engine upgrade',
           description: 'now you can do upgrade to you engine .'
         },
         {
-          icon: 'src/assets/AnimosCar/abouticon.svg',
+          icon: '../assets/AnimosCar/abouticon.svg',
           title: 'check breakup',
           description: 'now you can have full up chek about your car . '
         }
