@@ -13,35 +13,58 @@ const router = createRouter({
             name: 'homepage',
             path: '/',
             component: HomePage,
+            meta: {
+                title: 'Home Page'
+            },
         },
         {
             name: 'about',
             path: '/about',
             component: AboutPage,
+            meta: {
+                title: 'About Page'
+            },
         },
         {
             name: 'sportcars',
             path: '/sportcar',
             component: SportCars,
+            meta: {
+                title: 'Sports Cars'
+            },
         },
         {
             name: 'newcars',
             path: '/newcar',
             component: NewCars,
+            meta: {
+                title: 'New Cars'
+            },
         },
         {
             name: 'accessories',
             path: '/accessories',
             component: AccessPage,
+            meta: {
+                title: 'ACCESSORISE Page'
+            },
         },
         {
             name: 'contact',
             path: '/contact',
             component: ContactPage,
+            meta: {
+                title: 'Contact Page'
+            },
         },
 
 
     ]
+});
+
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title;
+    next();
 })
 
 
