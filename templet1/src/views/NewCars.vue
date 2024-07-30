@@ -1,10 +1,11 @@
 <template>
   <div class="main text-capitalize bg-dark position-relative overflow-hidden text-light">
     <div class="title text-center pt-4">
-      <h1>our new collection</h1>
+    <h1 class="text-center p-4">our new collection 
       <span>
         <img src="/Star 3.svg" alt="star" />
       </span>
+    </h1>
     </div>
     <!-- new cars images -->
     <section class="container mt-5 p-2">
@@ -102,18 +103,25 @@ export default {
   text-transform: capitalize;
 }
 
-.title img {
-  width: 20px;
-  transform: translate(-30%, 80%);
+.title,
+h1 {
+  position: relative;
+  overflow: hidden;
 }
-
+.title img {
+  position: absolute;
+  width: 20px;
+  transform: translate(30%, 90%);
+  bottom: 20%;
+  right: 50%;
+}
 h1::after {
   content: '';
   width: 11%;
   background-color: white;
   height: 1px;
   position: absolute;
-  top: 8%;
+  top: 99%;
   right: 52%;
 }
 
@@ -123,10 +131,9 @@ h1::before {
   background-color: white;
   height: 1px;
   position: absolute;
-  top: 8%;
+  top: 99%;
   right: 37.9%;
 }
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -154,27 +161,19 @@ h1::before {
   color: black !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  .title img {
+    display: none;
+  }
+
   h1::after {
-    top: 7.4%;
-    right: 53%;
+    content: '';
+    width: 0%;
   }
 
   h1::before {
-    top: 7.4%;
-    right: 37.5%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  h1::after {
-    top: 7.5%;
-    right: 54%;
-  }
-
-  h1::before {
-    top: 7.5%;
-    right: 37.5%;
+    content: '';
+    width: 0%;
   }
 }
 </style>
