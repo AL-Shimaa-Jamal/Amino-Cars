@@ -16,14 +16,20 @@
       <!-- cars images -->
       <div class="card-grid">
         <!-- images cards -->
-        <div v-for="(card, i) in cars" :key="i" class="card shadow bg-dark text-light" :class="{ active: activeIndex === i }">
+        <div v-for="(card, i) in cars" :key="i" class="card shadow bg-dark text-light" :class="{ active: activeIndex === i }" >
           <div class="card-image">
             <img :src="card.image" alt="cars" />
           </div>
           <div class="card-body">
             <h4>{{ card.title }}</h4>
-            <div class="text-end">{{ card.rate }}</div>
-            <p>{{ card.description }}</p>
+            <div class="text-center list-unstyled">
+              <li ><img src="/Star 3.svg" alt="" width="5%"></li>
+              <li><img src="/Star 3.svg" alt="" width="5%"></li>
+              <li><img src="/Star 3.svg" alt="" width="5%"></li>
+              <li><img src="/Star 3.svg" alt="" width="5%"></li>
+              <li><img src="/Star 3.svg" alt="" width="5%"></li>
+            </div>
+            <p class="container w-75 text-secondary">{{ card.description }}</p>
           </div>
         </div>
       </div>
@@ -42,21 +48,21 @@ export default {
       cars: [
         {
           id: 1,
-          image: '/new (1).svg',
+          image: '/user2.svg',
           title: 'mohammed',
-          description: 'now you can do upgrade to you engine',
+          description: 'Lorem ipsum, or lipsum as it is sometimes  known, is dummy text used in laying out print, graphe i',
         },
         {
           id: 2,
-          image: '/new (2).svg',
+          image: '/user1.svg',
           title: 'gamila 014',
-          description: 'now you can do upgrade to you engine',
+          description: 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphe i ',
         },
         {
           id: 3,
-          image: '/new (3).svg',
+          image: '/user3.svg',
           title: 'kareem',
-          description: 'now you can do upgrade to you engine',
+          description: 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out  print, graphe i',
         },
       ],
       activeIndex: 1,
@@ -118,10 +124,11 @@ h1::before {
 
 .card {
   transition: all 0.4s linear;
+  text-align: center;
 }
 
 .card-image img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 .card.active {
@@ -129,6 +136,7 @@ h1::before {
   box-shadow: 2px 2px 10px rgb(170, 170, 170) !important;
   border: 1px solid gray;
   transform: scale(1.1,1.1);
+  margin-bottom: 20px;
 }
 
 .spbtn li {
