@@ -70,7 +70,7 @@ export default {
 <!-- stylying  -->
 <style scoped>
 .about {
-  background: #212121;
+
   height: 200vh;
   padding: 3%;
 }

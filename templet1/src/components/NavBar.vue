@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
     
         <ul class="navbar-nav mb-2 mb-lg-0 ">
-          <li class="nav-item"><router-link class="nav-link text-light" to="/">Home</router-link></li>
+          <li class="nav-item"><router-link class="nav-link text-light" to="/" >Home</router-link></li>
           <li class="nav-item"><router-link class="nav-link text-light" to="about">about</router-link></li>
           <li class="nav-item"><router-link class="nav-link text-light" to="sportcar">sport Cars</router-link></li>
           <li class="nav-item"><router-link class="nav-link text-light" to="newcar">New Cars</router-link></li>
