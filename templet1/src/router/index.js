@@ -14,7 +14,7 @@ const router = createRouter({
             path: '/',
             component: HomePage,
             meta: {
-                title: 'Home Page'
+                title: 'Home '
             },
         },
         {
@@ -22,7 +22,7 @@ const router = createRouter({
             path: '/about',
             component: AboutPage,
             meta: {
-                title: 'About Page'
+                title: 'About '
             },
         },
         {
@@ -46,7 +46,7 @@ const router = createRouter({
             path: '/accessories',
             component: AccessPage,
             meta: {
-                title: 'ACCESSORISE Page'
+                title: 'ACCESSORISE '
             },
         },
         {
@@ -54,7 +54,7 @@ const router = createRouter({
             path: '/contact',
             component: ContactPage,
             meta: {
-                title: 'Contact Page'
+                title: 'Contact '
             },
         },
 
