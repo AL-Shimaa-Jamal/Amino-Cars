@@ -43,7 +43,6 @@ export default {
   methods: {
     changeStyle() {
       this.clickd =!this.clickd
-      console.log('hello')
     }
   },mounted(){
 this.Routes= this.$router.options.routes
