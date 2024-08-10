@@ -23,7 +23,7 @@
     </div>
     <!--  start features  -->
     <section class="featurs  ">
-      <div class="container d-flex flex-wrap justify-content-center align-items-center ">
+      <div class="container gridSys">
         <div class="card m-2 " v-for="(fet, i) in featurs" :key="i">
           <div>
             <img :src=fet.icon alt="featur icons" />
@@ -143,6 +143,12 @@ img {
   margin: 2% 0;
   padding: 2%;
 }
+.gridSys{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  justify-content: center;
+  align-items: center;
+}
 .card {
   background: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(255, 255, 255, 0.3));
   text-align: center;
@@ -172,5 +178,22 @@ img {
   margin: 2%;
   padding: 2%;
   cursor: pointer;
+}
+@media screen and (max-width:500px) {
+  .gridSys{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  justify-content: center;
+  align-items: center;
+}
+.card {
+font-size: 75%;
+}
+.card:hover div {
+  box-shadow: none;
+  transform: scale(1.1,1.1);
+  margin: 0;
+  padding: 0;
+}
 }
 </style>

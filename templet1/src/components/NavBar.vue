@@ -70,7 +70,7 @@ nav .navbar-nav {
 .notclick{
 transition: all .5s .1s  ease-in-out;
 }
-.notclick:hover{
+.notclick:focus{
 font-size: 18px;
 color:rgb(174, 174, 242) !important;
 font-weight: bold;

@@ -9,7 +9,10 @@
           find your expectation , or explore latest news in car world , accessories and all about
           cars
         </p>
-        <btn class="d-none d-lg-block" :title="title" />
+        <btn class="d-none d-lg-block" @click="displayInfo" :class="{none:block}" :title="title" />
+        <p class="d-none" >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum possimus corrupti animi tenetur adipisci voluptates itaque dolores dignissimos! Illo accusantium porro mollitia fugiat? Quam similique velit eos consectetur aspernatur?
+        </p>
       </div>
     </div>
   </div>
@@ -23,7 +26,14 @@ export default {
   },
   data() {
     return {
-      title: 'Know more'
+      title: 'Know more',
+      
+
+    }
+  },methods:{
+    displayInfo(){
+console.log('hi')
+
     }
   }
 }

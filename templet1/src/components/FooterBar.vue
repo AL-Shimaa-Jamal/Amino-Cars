@@ -1,11 +1,11 @@
 <template>
-  <div class="d-flex justify-content-between align-items-center flex-wrap w-100 p-4 shadow">
+  <div class="gridSys  w-100 p-4 ">
     <!-- logo -->
     <div class="logo">
       <img src="/logo.svg" alt="" />
     </div>
     <div class="Home">
-      <h3 class="m-2 shadow"><router-link class="link" to="/">home </router-link></h3>
+      <h3 class="m-2 "><router-link class="link" to="/">home </router-link></h3>
       <li><router-link class="link" to="/about">about & services</router-link></li>
       <li><router-link class="link" to="/accessories">accessories</router-link></li>
     </div>
@@ -36,9 +36,17 @@
   </div>
 </template>
 <style scoped>
+.gridSys{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(240px,1fr));
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 5px 5px 10px gray;
+}
 li {
   list-style: none;
 }
+
 h3 .link,
 li .link {
   text-decoration: none;
@@ -82,5 +90,40 @@ letter-spacing: 1.4px;
 transform: scale(1.3,1.3);
 border: 2px solid white;
 border-radius: 50%;
+}
+@media screen and (max-width:800px) {
+  .gridSys{
+  grid-template-columns: repeat(auto-fill , minmax(130px,1fr));
+  justify-content: center;
+  text-align: center;
+  font-size: 90%;
+}
+  .gridSys div{
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 8%;
+}
+h3{
+  font-size: 150%;
+}
+.follow a img{
+  width:20% ;
+  transition: all .6s ease-in-out;
+}
+}
+@media screen and (max-width:1000px) {
+  .gridSys{
+  grid-template-columns: repeat(auto-fill , minmax(230px,1fr));
+  justify-content: center;
+  text-align: center;
+  font-size: 90% ;
+}
+  .gridSys div{
+  text-align: center;
+border-right: .5px solid black;
+border-bottom: .5px solid black;
+padding: 8%;
+}
 }
 </style>
